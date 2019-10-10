@@ -767,13 +767,13 @@ GEM
     aws-sigv4 (1.1.0)
       aws-eventstream (~> 1.0, >= 1.0.2)
     builder (3.2.3)
-    capybara (3.20.0)
+    capybara (3.29.0)
       addressable
       mini_mime (>= 0.1.3)
       nokogiri (~> 1.8)
       rack (>= 1.6.0)
       rack-test (>= 0.6.3)
-      regexp_parser (~> 1.2)
+      regexp_parser (1.6.0)
       uglifier
       xpath (~> 3.2)
     cliver (0.3.2)
@@ -809,7 +809,7 @@ GEM
       parallel (~> 1.9)
       parslet (~> 1.5)
       pry (~> 0)
-      rspec (~> 3)
+      rspec (3.9.0)
       rspec-its (~> 1.2)
       rubyzip (~> 1.1)
       semverse
@@ -856,7 +856,7 @@ GEM
     rake (12.3.1)
     regexp_parser (1.6.0)
     retries (0.0.5)
-    rspec (3.8.0)
+    rspec (3.9.0)
       rspec-core (~> 3.8.0)
       rspec-expectations (~> 3.8.0)
       rspec-mocks (~> 3.8.0)
@@ -872,7 +872,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.2)
-    rubocop (0.69.0)
+    rubocop (0.75.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.6)
@@ -934,13 +934,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  capybara (= 3.20.0)
+  capybara (= 3.29.0)
   file_utils (= 1.1.2)
   inspec (= 1.51.6)
   poltergeist (= 1.18.1)
   rake (= 12.3.1)
-  rspec (= 3.8.0)
-  rubocop (= 0.69.0)
+  rspec (= 3.9.0)
+  rubocop (= 0.75.0)
   ruby_aem (= 2.5.1)
   ruby_aem_aws (= 1.2.1)
 
