@@ -35,7 +35,11 @@ package: stage
 deps:
 	gem install bundler --version=1.17.3
 	rm -rf .bundle
+	gem "json", "2.0.2"
+	gem uninstall ffi
+	gem install ffi --platform=ruby
 	bundle install --binstubs
+	bundle update
 	bundle exec inspec vendor --overwrite
 	cd vendor && find . -name "*.tar.gz" -exec tar -xzvf '{}' \; -exec rm '{}' \;
 	cd vendor && mv inspec-aem-aws-*.*.* inspec-aem-aws && cd inspec-aem-aws && make clean deps
